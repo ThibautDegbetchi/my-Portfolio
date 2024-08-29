@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thibaut Degbetchi - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Thibaut Degbetchi
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            thibautdegbetchi@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+            <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +22965757032
+            </div>
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="ai-generated-8640895_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Thibaut Degbetchi ! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I'm a junior mobile application developer. I use the dart language with flutter to design
+             my applications and I followed a coursear certification to acquire skills as an IBM back-end
+             developer.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="css3-1841590_1280.png"/>
+            <h6>CSS</h6>
+            <p>3 years experience</p>
+          </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="node-js-736399_1280.png"/>
+            <h6>NodeJs</h6>
+            <p>6 month experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="php-151199_1280.png"/>
+            <h6>Php</h6>
+            <p>3 month experience</p>
+          </div> 
+
+        
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3> Distribution fId mobile app</h3>
+            <ul>
+              <li>Developed a secure mobile app develop in Benin with flutter/dart for the front-end and laravel for the backen. This app is use to distribute personnal identification card in Benin country.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Tok-Etu mobile app</h3> 
+            <ul>
+              <li>Developed for a student using Flutter and dart. This app help all students to choose the bus they wand and do reservation for a specific hour or day?</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Banc app</h3>
+            <ul>
+              <li>I develop this app using Java Standard Edition. It help banquer to manage very easely client acount.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Thibaut Degbetchi on several
+           mobile development projects. As a Junior Mobile Developer,
+            Thibaut Degbetchi consistently demonstrated a strong understanding 
+            of both Android and iOS platforms. Their ability to quickly grasp 
+            new concepts and apply them effectively made them a valuable asset 
+            to our team. Thibaut Degbetchi is always eager to learn and adapt, 
+            which is crucial in the fast-paced world of mobile development."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Thibaut Degbetchi has shown remarkable dedication to their craft as a 
+          mobile developer. They possess a solid foundation in Flutter which allowed 
+          them to develop cross-platform applications efficiently. Their attention to 
+          detail and commitment to delivering high-quality code ensured that our 
+          projects were not only completed on time but also met the highest standards 
+          of quality.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Jane during the initial phase of our venture which needed Web development. 
+          She is a committed resource who has in depth knowledge about the domain. 
+          She will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
